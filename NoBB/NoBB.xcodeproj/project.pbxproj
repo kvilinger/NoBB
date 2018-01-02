@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0BD7071FFBBED20069C688 /* NBMainPageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BD7061FFBBED20069C688 /* NBMainPageDataSource.swift */; };
 		BEC4F7A21FFB332C00103DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */; };
 		BEC4F7A41FFB332C00103DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7A31FFB332C00103DAE /* ViewController.swift */; };
 		BEC4F7A71FFB332C00103DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7A51FFB332C00103DAE /* Main.storyboard */; };
 		BEC4F7A91FFB332C00103DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7A81FFB332C00103DAE /* Assets.xcassets */; };
 		BEC4F7AC1FFB332C00103DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7AA1FFB332C00103DAE /* LaunchScreen.storyboard */; };
 		BEC4F7B71FFB332C00103DAE /* NoBBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7B61FFB332C00103DAE /* NoBBTests.swift */; };
+		BEC4F7C51FFB3B0900103DAE /* NBLaunchImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7C41FFB3B0900103DAE /* NBLaunchImageView.xib */; };
+		BEC4F7C71FFB3B5400103DAE /* NBLaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */; };
+		BEC4F7CD1FFB5A3C00103DAE /* NBLogonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */; };
+		BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */; };
+		BEE3D1D51FFBC388000F8B6D /* NBMainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */; };
+		BEE3D1D61FFBC388000F8B6D /* NBMainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */; };
+		BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE0BD7061FFBBED20069C688 /* NBMainPageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageDataSource.swift; sourceTree = "<group>"; };
 		BEC4F79E1FFB332C00103DAE /* NoBB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoBB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC4F7A31FFB332C00103DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,13 @@
 		BEC4F7B21FFB332C00103DAE /* NoBBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoBBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC4F7B61FFB332C00103DAE /* NoBBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBBTests.swift; sourceTree = "<group>"; };
 		BEC4F7B81FFB332C00103DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC4F7C41FFB3B0900103DAE /* NBLaunchImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBLaunchImageView.xib; sourceTree = "<group>"; };
+		BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBLaunchImageView.swift; sourceTree = "<group>"; };
+		BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBLogonController.swift; sourceTree = "<group>"; };
+		BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageController.swift; sourceTree = "<group>"; };
+		BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageCell.swift; sourceTree = "<group>"; };
+		BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainPageCell.xib; sourceTree = "<group>"; };
+		BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +79,7 @@
 				BEC4F7A01FFB332C00103DAE /* NoBB */,
 				BEC4F7B51FFB332C00103DAE /* NoBBTests */,
 				BEC4F79F1FFB332C00103DAE /* Products */,
+				BEE3D1D71FFBD873000F8B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +95,13 @@
 		BEC4F7A01FFB332C00103DAE /* NoBB */ = {
 			isa = PBXGroup;
 			children = (
+				BEC4F7CB1FFB5A2600103DAE /* LogonPage */,
+				BEC4F7CA1FFB5A0900103DAE /* MainPage */,
+				BEC4F7C11FFB3A7B00103DAE /* LaunchSource */,
 				BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */,
 				BEC4F7A31FFB332C00103DAE /* ViewController.swift */,
 				BEC4F7A51FFB332C00103DAE /* Main.storyboard */,
 				BEC4F7A81FFB332C00103DAE /* Assets.xcassets */,
-				BEC4F7AA1FFB332C00103DAE /* LaunchScreen.storyboard */,
 				BEC4F7AD1FFB332C00103DAE /* Info.plist */,
 			);
 			path = NoBB;
@@ -94,6 +114,43 @@
 				BEC4F7B81FFB332C00103DAE /* Info.plist */,
 			);
 			path = NoBBTests;
+			sourceTree = "<group>";
+		};
+		BEC4F7C11FFB3A7B00103DAE /* LaunchSource */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7AA1FFB332C00103DAE /* LaunchScreen.storyboard */,
+				BEC4F7C41FFB3B0900103DAE /* NBLaunchImageView.xib */,
+				BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */,
+			);
+			path = LaunchSource;
+			sourceTree = "<group>";
+		};
+		BEC4F7CA1FFB5A0900103DAE /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */,
+				BE0BD7061FFBBED20069C688 /* NBMainPageDataSource.swift */,
+				BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */,
+				BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		BEC4F7CB1FFB5A2600103DAE /* LogonPage */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */,
+			);
+			path = LogonPage;
+			sourceTree = "<group>";
+		};
+		BEE3D1D71FFBD873000F8B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +197,7 @@
 		BEC4F7961FFB332C00103DAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NB;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Darren;
@@ -179,9 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE3D1D61FFBC388000F8B6D /* NBMainPageCell.xib in Resources */,
 				BEC4F7AC1FFB332C00103DAE /* LaunchScreen.storyboard in Resources */,
 				BEC4F7A91FFB332C00103DAE /* Assets.xcassets in Resources */,
 				BEC4F7A71FFB332C00103DAE /* Main.storyboard in Resources */,
+				BEC4F7C51FFB3B0900103DAE /* NBLaunchImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC4F7A41FFB332C00103DAE /* ViewController.swift in Sources */,
+				BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */,
+				BEC4F7CD1FFB5A3C00103DAE /* NBLogonController.swift in Sources */,
+				BEE3D1D51FFBC388000F8B6D /* NBMainPageCell.swift in Sources */,
+				BEC4F7C71FFB3B5400103DAE /* NBLaunchImageView.swift in Sources */,
+				BE0BD7071FFBBED20069C688 /* NBMainPageDataSource.swift in Sources */,
 				BEC4F7A21FFB332C00103DAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
