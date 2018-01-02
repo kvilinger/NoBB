@@ -20,11 +20,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-tf-clt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-Ze-7gt">
+                                <rect key="frame" x="172" y="567" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i1s-n0-3mE"/>
+                                </constraints>
+                                <state key="normal" title="跳过">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aSa-LF-sNN" kind="presentation" id="ZZY-yF-P9U"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vzr-tf-clt" secondAttribute="bottom" id="4eS-1Y-Etp"/>
+                            <constraint firstItem="vzr-tf-clt" firstAttribute="top" secondItem="aDG-Ta-W5n" secondAttribute="bottom" constant="-20" id="QMo-Cx-rKH"/>
+                            <constraint firstItem="vzr-tf-clt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ud9-or-Xsd"/>
+                            <constraint firstItem="Cjo-WC-VoS" firstAttribute="top" secondItem="F7Y-Ze-7gt" secondAttribute="bottom" constant="70" id="pkQ-Ox-y6d"/>
+                            <constraint firstItem="F7Y-Ze-7gt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWO-NB-cQs"/>
+                            <constraint firstAttribute="trailing" secondItem="vzr-tf-clt" secondAttribute="trailing" id="vW7-1M-hGY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgScrollView" destination="vzr-tf-clt" id="eFp-Jg-LC0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ua1-O5-YNC">
+            <objects>
+                <navigationController id="aSa-LF-sNN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9sa-OV-vH7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W8L-ku-1hZ" kind="relationship" relationship="rootViewController" id="KkT-SK-0wK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNI-xD-HHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="28"/>
+        </scene>
+        <!--Hello-->
+        <scene sceneID="BVf-fG-X5q">
+            <objects>
+                <viewController id="W8L-ku-1hZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iVl-Af-yKW"/>
+                        <viewControllerLayoutGuide type="bottom" id="qP0-eH-sSC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wSM-fc-fJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello" id="5du-iJ-kI5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KcI-w4-lCR"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVj-PZ-mcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="27"/>
         </scene>
     </scenes>
 </document>
