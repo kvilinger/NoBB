@@ -15,6 +15,8 @@
 		BEC4F7B71FFB332C00103DAE /* NoBBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7B61FFB332C00103DAE /* NoBBTests.swift */; };
 		BEC4F7C51FFB3B0900103DAE /* NBLaunchImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7C41FFB3B0900103DAE /* NBLaunchImageView.xib */; };
 		BEC4F7C71FFB3B5400103DAE /* NBLaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */; };
+		BEC4F7CD1FFB5A3C00103DAE /* NBLogonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */; };
+		BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		BEC4F7B81FFB332C00103DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC4F7C41FFB3B0900103DAE /* NBLaunchImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBLaunchImageView.xib; sourceTree = "<group>"; };
 		BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBLaunchImageView.swift; sourceTree = "<group>"; };
+		BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBLogonController.swift; sourceTree = "<group>"; };
+		BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		BEC4F7A01FFB332C00103DAE /* NoBB */ = {
 			isa = PBXGroup;
 			children = (
+				BEC4F7CB1FFB5A2600103DAE /* LogonPage */,
+				BEC4F7CA1FFB5A0900103DAE /* MainPage */,
 				BEC4F7C11FFB3A7B00103DAE /* LaunchSource */,
 				BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */,
 				BEC4F7A31FFB332C00103DAE /* ViewController.swift */,
@@ -108,6 +114,22 @@
 				BEC4F7C61FFB3B5400103DAE /* NBLaunchImageView.swift */,
 			);
 			path = LaunchSource;
+			sourceTree = "<group>";
+		};
+		BEC4F7CA1FFB5A0900103DAE /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		BEC4F7CB1FFB5A2600103DAE /* LogonPage */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */,
+			);
+			path = LogonPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC4F7A41FFB332C00103DAE /* ViewController.swift in Sources */,
+				BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */,
+				BEC4F7CD1FFB5A3C00103DAE /* NBLogonController.swift in Sources */,
 				BEC4F7C71FFB3B5400103DAE /* NBLaunchImageView.swift in Sources */,
 				BEC4F7A21FFB332C00103DAE /* AppDelegate.swift in Sources */,
 			);

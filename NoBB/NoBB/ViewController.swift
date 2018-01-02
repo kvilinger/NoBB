@@ -22,6 +22,18 @@ class ViewController: UIViewController {
         bgScrollView.addSubview(bg1)
         bgScrollView.addSubview(bg2)
     }
-
+    @IBAction func jumpToApp(_ sender: UIButton) {
+        modalPresentationStyle = .custom
+        modalTransitionStyle = .crossDissolve
+        
+        if AppDelegate.isLogon {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Nav_NBMainPageController")
+            present(vc, animated: true, completion: nil)
+        } else {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NBLogonController")
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
 }
 

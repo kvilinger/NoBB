@@ -9,13 +9,33 @@
 import UIKit
 
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    static var isLogon = false
+    private let kAppStartKey = "NBFirstStartKey"
+    private let kUserLogonKey = "NBUserLogonStateKey"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        /// 是否是第一次启动 true为不是第一次
+        let notFirstStart = UserDefaults.standard.bool(forKey: kAppStartKey)
+        /// 根据状态选择app的根控制器
+        var rootVCString = !notFirstStart ? "ViewController" : "NBLogonController"
+        /// 用户登录状态  true为已登录
+        let logonState = UserDefaults.standard.bool(forKey: kUserLogonKey)
+//        if logonState {
+//           rootVCString = "Nav_NBMainPageController"
+//        }
+        let myWindow = UIWindow(frame: UIScreen.main.bounds)
+        myWindow.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: rootVCString)
+        window = myWindow
+        window?.makeKeyAndVisible()
+        if !notFirstStart {
+            AppDelegate.isLogon = true
+            UserDefaults.standard.set(true, forKey: kAppStartKey)
+            UserDefaults.standard.set(true, forKey: kUserLogonKey)
+        }
         return true
     }
 
