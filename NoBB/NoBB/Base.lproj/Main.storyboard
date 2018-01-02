@@ -89,7 +89,7 @@
                         <barButtonItem key="leftBarButtonItem" image="left_menu" id="lEd-gw-AMi">
                             <color key="tintColor" red="0.45082336664199829" green="0.45494771003723145" blue="0.45489031076431274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Roj-Ja-Pvr"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="4bG-5c-ZZe"/>
                             </connections>
                         </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O9P-7I-9iF">
@@ -229,6 +229,7 @@
                     <navigationItem key="navigationItem" id="5du-iJ-kI5"/>
                     <connections>
                         <outlet property="logonView" destination="bHZ-ZF-HoD" id="2Cd-Vh-Sj3"/>
+                        <outlet property="logonViewTop" destination="w7Y-vR-3hp" id="v96-a9-eaK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVj-PZ-mcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,6 +244,6 @@
         <image name="nav_add" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Roj-Ja-Pvr"/>
+        <segue reference="4bG-5c-ZZe"/>
     </inferredMetricsTieBreakers>
 </document>

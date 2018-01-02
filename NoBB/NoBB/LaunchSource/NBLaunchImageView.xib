@@ -26,8 +26,8 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11X-vy-948">
-                    <rect key="frame" x="40" y="380" width="334" height="0.0"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="眼前的苟且" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11X-vy-948">
+                    <rect key="frame" x="40" y="380" width="334" height="27.666666666666686"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="RJ0-0O-Q2B"/>
                     </constraints>
@@ -35,14 +35,14 @@
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-pi-geh">
-                    <rect key="frame" x="40" y="400" width="334" height="0.0"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诗和远方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-pi-geh">
+                    <rect key="frame" x="40" y="427.66666666666669" width="334" height="20.333333333333314"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.69011962413787842" green="0.69024020433425903" blue="0.69011199474334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.99063635090541513" green="1" blue="0.88015263383520048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.035294117647058823" green="0.11764705882352941" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.93916560913705582" green="0.69800220324102247" blue="0.1897929095921371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="XR2-pi-geh" secondAttribute="trailing" constant="40" id="8t6-O6-sMC"/>
                 <constraint firstItem="XR2-pi-geh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="ETM-dc-hmb"/>

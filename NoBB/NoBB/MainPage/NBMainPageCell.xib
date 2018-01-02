@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NBMainPageCell" rowHeight="97" id="KGk-i7-Jjw" customClass="NBMainPageCell" customModule="NoBB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_03" translatesAutoresizingMaskIntoConstraints="NO" id="bl9-8s-tIS">
+                        <rect key="frame" x="10" y="10" width="347" height="100.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美食" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-JS-k4C">
+                        <rect key="frame" x="25" y="25" width="45" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="3hy-Y3-Nab"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="qDc-he-Anq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bl9-8s-tIS" secondAttribute="bottom" constant="10" id="MV4-yf-Pf9"/>
+                    <constraint firstAttribute="trailing" secondItem="bl9-8s-tIS" secondAttribute="trailing" constant="10" id="WL5-qd-erc"/>
+                    <constraint firstItem="bl9-8s-tIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="al6-Bh-qbD"/>
+                    <constraint firstItem="oAH-JS-k4C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="dgw-1E-0jV"/>
+                    <constraint firstItem="oAH-JS-k4C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="kJe-5w-7Pq"/>
+                    <constraint firstItem="bl9-8s-tIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uKk-I1-ZGl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImageView" destination="bl9-8s-tIS" id="QLc-KR-8Ac"/>
+                <outlet property="titleLabel" destination="oAH-JS-k4C" id="D6K-t0-zIS"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="92.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_03" width="562" height="375"/>
+    </resources>
+</document>

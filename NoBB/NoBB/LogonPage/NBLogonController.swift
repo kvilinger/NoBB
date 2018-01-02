@@ -11,12 +11,23 @@ import UIKit
 class NBLogonController: UIViewController {
 
     @IBOutlet weak var logonView: UIView!
+    @IBOutlet weak var logonViewTop: NSLayoutConstraint!
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configLogonView()
+        registerNotification()
     }
 
+    private func registerNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notify:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notify:)), name: Notification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
     private func configLogonView() {
         logonView.layer.borderColor = UIColor.gray.cgColor
         logonView.layer.borderWidth = 0.5
@@ -26,4 +37,28 @@ class NBLogonController: UIViewController {
         logonView.layer.shadowOffset = CGSize.zero
     }
     
+    @objc func keyboardWillShow(notify: NSNotification) {
+        let endFrame = (notify.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        DispatchQueue.main.async {
+            UIView.animate(withDuration:0.3) {
+                self.logonViewTop.constant -= endFrame.height/2.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notify: NSNotification) {
+        let endFrame = (notify.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        DispatchQueue.main.async {
+            UIView.animate(withDuration:0.3) {
+                self.logonViewTop.constant += endFrame.height/2.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
 }
