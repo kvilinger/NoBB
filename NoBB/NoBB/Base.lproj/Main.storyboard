@@ -34,7 +34,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="jumpToApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZn-g7-S4h"/>
+                                    <segue destination="W8L-ku-1hZ" kind="presentation" modalTransitionStyle="crossDissolve" id="I9V-uZ-27o"/>
                                 </connections>
                             </button>
                         </subviews>
