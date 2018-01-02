@@ -11,6 +11,7 @@ import UIKit
 class NBLogonController: UIViewController {
 
     @IBOutlet weak var logonView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLogonView()

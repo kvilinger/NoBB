@@ -13,7 +13,6 @@ import UIKit
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    static var isLogon = false
     private let kAppStartKey = "NBFirstStartKey"
     private let kUserLogonKey = "NBUserLogonStateKey"
     
@@ -24,15 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var rootVCString = !notFirstStart ? "ViewController" : "NBLogonController"
         /// 用户登录状态  true为已登录
         let logonState = UserDefaults.standard.bool(forKey: kUserLogonKey)
-//        if logonState {
-//           rootVCString = "Nav_NBMainPageController"
-//        }
+        if logonState {
+           rootVCString = "Nav_NBMainPageController"
+        }
         let myWindow = UIWindow(frame: UIScreen.main.bounds)
         myWindow.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: rootVCString)
         window = myWindow
         window?.makeKeyAndVisible()
         if !notFirstStart {
-            AppDelegate.isLogon = true
             UserDefaults.standard.set(true, forKey: kAppStartKey)
             UserDefaults.standard.set(true, forKey: kUserLogonKey)
         }
