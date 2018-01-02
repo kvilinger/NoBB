@@ -12,6 +12,5 @@ class NBMainPageController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }

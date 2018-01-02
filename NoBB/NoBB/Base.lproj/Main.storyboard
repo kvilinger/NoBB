@@ -86,7 +86,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="2nA-Dm-b56">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="lEd-gw-AMi"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O9P-7I-9iF">
+                            <rect key="frame" x="151.5" y="4.5" width="72" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="navIcon">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="jKn-Ib-jlJ"/>
+                            </connections>
+                        </button>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="e2e-VG-i8d"/>
                             <barButtonItem systemItem="search" id="Wby-Pp-eBJ"/>
@@ -97,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="1814" y="807"/>
         </scene>
-        <!--Logon Controller-->
+        <!--Logon-->
         <scene sceneID="BVf-fG-X5q">
             <objects>
-                <viewController storyboardIdentifier="NBLogonController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W8L-ku-1hZ" customClass="NBLogonController" customModule="NoBB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NBLogonController" title="Logon" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W8L-ku-1hZ" customClass="NBLogonController" customModule="NoBB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iVl-Af-yKW"/>
                         <viewControllerLayoutGuide type="bottom" id="qP0-eH-sSC"/>
@@ -161,6 +172,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="xwN-A2-Q4T" kind="presentation" modalTransitionStyle="crossDissolve" id="W0f-2H-5g3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-fD-UrB">
                                         <rect key="frame" x="36" y="305" width="60" height="28"/>
@@ -223,5 +237,9 @@
     </scenes>
     <resources>
         <image name="defaultIcon" width="256" height="256"/>
+        <image name="navIcon" width="72" height="35"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="W0f-2H-5g3"/>
+    </inferredMetricsTieBreakers>
 </document>
