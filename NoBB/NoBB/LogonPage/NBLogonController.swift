@@ -13,6 +13,9 @@ class NBLogonController: UIViewController {
     @IBOutlet weak var logonView: UIView!
     @IBOutlet weak var logonViewTop: NSLayoutConstraint!
     
+    var keyBoardIsShow = false
+    
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -38,11 +41,15 @@ class NBLogonController: UIViewController {
     }
     
     @objc func keyboardWillShow(notify: NSNotification) {
+        if keyBoardIsShow {
+           return
+        }
         let endFrame = (notify.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         DispatchQueue.main.async {
             UIView.animate(withDuration:0.3) {
                 self.logonViewTop.constant -= endFrame.height/2.0
                 self.view.layoutIfNeeded()
+                self.keyBoardIsShow = true
             }
         }
     }
@@ -53,6 +60,7 @@ class NBLogonController: UIViewController {
             UIView.animate(withDuration:0.3) {
                 self.logonViewTop.constant += endFrame.height/2.0
                 self.view.layoutIfNeeded()
+                self.keyBoardIsShow = false
             }
         }
     }

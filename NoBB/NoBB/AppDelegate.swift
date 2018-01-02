@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 @UIApplicationMain
 
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     private let kAppStartKey = "NBFirstStartKey"
     private let kUserLogonKey = "NBUserLogonStateKey"
+    private let kAuthentication = "NBFingerprintAuthenticationKey"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         /// 是否是第一次启动 true为不是第一次
@@ -26,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if logonState {
            rootVCString = "Nav_NBMainPageController"
         }
+        
+        let _ = UserDefaults.standard.bool(forKey: kAuthentication)
         let myWindow = UIWindow(frame: UIScreen.main.bounds)
         myWindow.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: rootVCString)
         window = myWindow
@@ -33,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !notFirstStart {
             UserDefaults.standard.set(true, forKey: kAppStartKey)
             UserDefaults.standard.set(true, forKey: kUserLogonKey)
+            UserDefaults.standard.set(true, forKey: kAuthentication)
         }
         return true
     }
@@ -58,7 +63,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate {
+    
+    
+    /// 指纹识别
+    ///
+    /// - Parameter completed: 是否成功回调
+    func fingerprintAuthentication(completed: @escaping ((Bool)->Void)) {
+        let authentication = LAContext()
+        let isAvailable = authentication.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,error: nil)
+        if isAvailable {
+            authentication.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "这里需要您的指纹来进行识别验证", reply: { (success, error) -> Void in
+                completed(success)
+            })
+        } else {
+            completed(false)
+        }
+        
+    }
 }
 

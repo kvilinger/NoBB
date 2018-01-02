@@ -20,6 +20,7 @@
 		BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */; };
 		BEE3D1D51FFBC388000F8B6D /* NBMainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */; };
 		BEE3D1D61FFBC388000F8B6D /* NBMainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */; };
+		BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BEC4F7CE1FFB5B9300103DAE /* NBMainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageController.swift; sourceTree = "<group>"; };
 		BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageCell.swift; sourceTree = "<group>"; };
 		BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainPageCell.xib; sourceTree = "<group>"; };
+		BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 				BEC4F7A01FFB332C00103DAE /* NoBB */,
 				BEC4F7B51FFB332C00103DAE /* NoBBTests */,
 				BEC4F79F1FFB332C00103DAE /* Products */,
+				BEE3D1D71FFBD873000F8B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +143,14 @@
 				BEC4F7CC1FFB5A3C00103DAE /* NBLogonController.swift */,
 			);
 			path = LogonPage;
+			sourceTree = "<group>";
+		};
+		BEE3D1D71FFBD873000F8B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
