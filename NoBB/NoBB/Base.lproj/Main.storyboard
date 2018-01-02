@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,26 +86,28 @@
                     </view>
                     <navigationItem key="navigationItem" id="2nA-Dm-b56">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="lEd-gw-AMi"/>
+                        <barButtonItem key="leftBarButtonItem" image="left_menu" id="lEd-gw-AMi">
+                            <color key="tintColor" red="0.45082336664199829" green="0.45494771003723145" blue="0.45489031076431274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Roj-Ja-Pvr"/>
+                            </connections>
+                        </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O9P-7I-9iF">
-                            <rect key="frame" x="151.5" y="4.5" width="72" height="35"/>
+                            <rect key="frame" x="135.5" y="4.5" width="104" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <state key="normal" image="navIcon">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" id="jKn-Ib-jlJ"/>
-                            </connections>
                         </button>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="e2e-VG-i8d"/>
-                            <barButtonItem systemItem="search" id="Wby-Pp-eBJ"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="nav_add" id="e2e-VG-i8d">
+                            <color key="tintColor" red="0.45082336664199829" green="0.45494771003723145" blue="0.45489031076431274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg9-WD-64u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="807"/>
+            <point key="canvasLocation" x="1813.5999999999999" y="806.44677661169419"/>
         </scene>
         <!--Logon-->
         <scene sceneID="BVf-fG-X5q">
@@ -237,9 +238,11 @@
     </scenes>
     <resources>
         <image name="defaultIcon" width="256" height="256"/>
+        <image name="left_menu" width="32" height="32"/>
         <image name="navIcon" width="72" height="35"/>
+        <image name="nav_add" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W0f-2H-5g3"/>
+        <segue reference="Roj-Ja-Pvr"/>
     </inferredMetricsTieBreakers>
 </document>
