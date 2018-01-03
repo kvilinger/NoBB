@@ -21,6 +21,7 @@
 		BEE3D1D51FFBC388000F8B6D /* NBMainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */; };
 		BEE3D1D61FFBC388000F8B6D /* NBMainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */; };
 		BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */; };
+		BEE3D1DD1FFC62DC000F8B6D /* NBMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3D1DC1FFC62DC000F8B6D /* NBMainDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BEE3D1D31FFBC388000F8B6D /* NBMainPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageCell.swift; sourceTree = "<group>"; };
 		BEE3D1D41FFBC388000F8B6D /* NBMainPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainPageCell.xib; sourceTree = "<group>"; };
 		BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		BEE3D1DC1FFC62DC000F8B6D /* NBMainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +97,12 @@
 		BEC4F7A01FFB332C00103DAE /* NoBB */ = {
 			isa = PBXGroup;
 			children = (
-				BEC4F7CB1FFB5A2600103DAE /* LogonPage */,
-				BEC4F7CA1FFB5A0900103DAE /* MainPage */,
-				BEC4F7C11FFB3A7B00103DAE /* LaunchSource */,
+				BEE3D1DA1FFC6292000F8B6D /* UI */,
+				BEE3D1DB1FFC62A8000F8B6D /* DataSource */,
+				BEE3D1DE1FFC62E5000F8B6D /* Source */,
 				BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */,
 				BEC4F7A31FFB332C00103DAE /* ViewController.swift */,
 				BEC4F7A51FFB332C00103DAE /* Main.storyboard */,
-				BEC4F7A81FFB332C00103DAE /* Assets.xcassets */,
-				BEC4F7AD1FFB332C00103DAE /* Info.plist */,
 			);
 			path = NoBB;
 			sourceTree = "<group>";
@@ -151,6 +151,33 @@
 				BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE3D1DA1FFC6292000F8B6D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7CB1FFB5A2600103DAE /* LogonPage */,
+				BEC4F7CA1FFB5A0900103DAE /* MainPage */,
+				BEC4F7C11FFB3A7B00103DAE /* LaunchSource */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BEE3D1DB1FFC62A8000F8B6D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3D1DC1FFC62DC000F8B6D /* NBMainDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BEE3D1DE1FFC62E5000F8B6D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4F7A81FFB332C00103DAE /* Assets.xcassets */,
+				BEC4F7AD1FFB332C00103DAE /* Info.plist */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC4F7A41FFB332C00103DAE /* ViewController.swift in Sources */,
+				BEE3D1DD1FFC62DC000F8B6D /* NBMainDataSource.swift in Sources */,
 				BEC4F7CF1FFB5B9300103DAE /* NBMainPageController.swift in Sources */,
 				BEC4F7CD1FFB5A3C00103DAE /* NBLogonController.swift in Sources */,
 				BEE3D1D51FFBC388000F8B6D /* NBMainPageCell.swift in Sources */,
@@ -420,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LESEXUKLEU;
-				INFOPLIST_FILE = NoBB/Info.plist;
+				INFOPLIST_FILE = NoBB/Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efetion.wzh.NoBB;
@@ -436,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LESEXUKLEU;
-				INFOPLIST_FILE = NoBB/Info.plist;
+				INFOPLIST_FILE = NoBB/Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efetion.wzh.NoBB;

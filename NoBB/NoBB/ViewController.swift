@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @discardableResult private func addSubPage(image:UIImage, title:String, content:String)->ViewController{
         let page = NBLaunchImageView.loadImage(image: image)
         let xValue = CGFloat(bgScrollView.subviews.count)*view.frame.width
-        page.setTitleText(text: title).setContentText(text: content).frame = CGRect(x: xValue, y: 0, width: view.frame.width, height: view.frame.height)
+        page.addTitleText(text: title).addContentText(text: content).frame = CGRect(x: xValue, y: 0, width: view.frame.width, height: view.frame.height)
         bgScrollView.addSubview(page)
         return self
     }
