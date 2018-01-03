@@ -137,7 +137,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-EM-f7h">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="    用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-EM-f7h">
                                         <rect key="frame" x="35" y="180" width="230" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="8pk-0j-rhZ"/>
@@ -147,7 +147,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPr-Rd-tLO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="    密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPr-Rd-tLO">
                                         <rect key="frame" x="35" y="240" width="230" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="T1s-TN-tKw"/>

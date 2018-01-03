@@ -55,6 +55,9 @@ class NBLogonController: UIViewController {
     }
     
     @objc private func keyboardWillHide(notify: NSNotification) {
+        if !keyBoardIsShow {
+            return
+        }
         let endFrame = (notify.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         DispatchQueue.main.async {
             UIView.animate(withDuration:0.3) {

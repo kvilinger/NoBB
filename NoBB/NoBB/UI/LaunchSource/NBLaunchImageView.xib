@@ -16,18 +16,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8m-xR-H3g">
-                    <rect key="frame" x="132" y="150" width="150" height="150"/>
+                    <rect key="frame" x="97" y="150" width="220" height="220"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="OOQ-Hs-mEb"/>
-                        <constraint firstAttribute="height" constant="150" id="reC-wP-UT0"/>
+                        <constraint firstAttribute="width" constant="220" id="OOQ-Hs-mEb"/>
+                        <constraint firstAttribute="height" constant="220" id="reC-wP-UT0"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="75"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="110"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="眼前的苟且" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11X-vy-948">
-                    <rect key="frame" x="40" y="380" width="334" height="27.666666666666686"/>
+                    <rect key="frame" x="40" y="435" width="334" height="27.666666666666686"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="RJ0-0O-Q2B"/>
                     </constraints>
@@ -36,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诗和远方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-pi-geh">
-                    <rect key="frame" x="40" y="427.66666666666669" width="334" height="20.333333333333314"/>
+                    <rect key="frame" x="40" y="482.66666666666669" width="334" height="20.333333333333314"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.99063635090541513" green="1" blue="0.88015263383520048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                 <constraint firstAttribute="trailing" secondItem="11X-vy-948" secondAttribute="trailing" constant="40" id="eQL-mC-mZA"/>
                 <constraint firstItem="11X-vy-948" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="heS-ta-iwq"/>
                 <constraint firstItem="11X-vy-948" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kif-qX-UDN"/>
-                <constraint firstItem="11X-vy-948" firstAttribute="top" secondItem="L8m-xR-H3g" secondAttribute="bottom" constant="80" id="rMi-Ua-US5"/>
+                <constraint firstItem="11X-vy-948" firstAttribute="top" secondItem="L8m-xR-H3g" secondAttribute="bottom" constant="65" id="rMi-Ua-US5"/>
                 <constraint firstItem="L8m-xR-H3g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tjf-3w-wJF"/>
             </constraints>
             <connections>
