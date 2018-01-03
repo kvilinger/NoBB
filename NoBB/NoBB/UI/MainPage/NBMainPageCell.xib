@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -37,18 +38,32 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好吃的好喝的好玩的好吃的好喝的好玩的好吃的好喝的好玩的好吃的好喝的好玩的" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-M1-geh">
+                        <rect key="frame" x="25" y="59" width="301" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="zXe-Fs-dH4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.97376665609137059" green="0.94642596391314526" blue="0.92421712814705415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="-1" height="-1"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="bl9-8s-tIS" secondAttribute="bottom" constant="10" id="MV4-yf-Pf9"/>
                     <constraint firstAttribute="trailing" secondItem="bl9-8s-tIS" secondAttribute="trailing" constant="10" id="WL5-qd-erc"/>
                     <constraint firstItem="bl9-8s-tIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="al6-Bh-qbD"/>
+                    <constraint firstItem="gaO-M1-geh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="b0g-WO-fWU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gaO-M1-geh" secondAttribute="trailing" constant="25" id="cri-4A-rBW"/>
                     <constraint firstItem="oAH-JS-k4C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="dgw-1E-0jV"/>
                     <constraint firstItem="oAH-JS-k4C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="kJe-5w-7Pq"/>
+                    <constraint firstItem="gaO-M1-geh" firstAttribute="top" secondItem="oAH-JS-k4C" secondAttribute="bottom" constant="8" id="mNR-Qo-xlJ"/>
                     <constraint firstItem="bl9-8s-tIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uKk-I1-ZGl"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="backgroundImageView" destination="bl9-8s-tIS" id="QLc-KR-8Ac"/>
+                <outlet property="contentLabel" destination="gaO-M1-geh" id="nVv-r2-IRg"/>
                 <outlet property="titleLabel" destination="oAH-JS-k4C" id="D6K-t0-zIS"/>
             </connections>
             <point key="canvasLocation" x="57.5" y="92.5"/>

@@ -10,8 +10,8 @@ import UIKit
 
 class NBLogonController: UIViewController {
 
-    @IBOutlet weak var logonView: UIView!
-    @IBOutlet weak var logonViewTop: NSLayoutConstraint!
+    @IBOutlet private weak var logonView: UIView!
+    @IBOutlet private weak var logonViewTop: NSLayoutConstraint!
     
     var keyBoardIsShow = false
     
@@ -40,7 +40,7 @@ class NBLogonController: UIViewController {
         logonView.layer.shadowOffset = CGSize.zero
     }
     
-    @objc func keyboardWillShow(notify: NSNotification) {
+    @objc private func keyboardWillShow(notify: NSNotification) {
         if keyBoardIsShow {
            return
         }
@@ -54,7 +54,7 @@ class NBLogonController: UIViewController {
         }
     }
     
-    @objc func keyboardWillHide(notify: NSNotification) {
+    @objc private func keyboardWillHide(notify: NSNotification) {
         let endFrame = (notify.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         DispatchQueue.main.async {
             UIView.animate(withDuration:0.3) {

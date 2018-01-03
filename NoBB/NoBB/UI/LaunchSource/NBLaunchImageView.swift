@@ -21,17 +21,17 @@ class NBLaunchImageView: UIImageView {
         return view
     }
     
-    func setTitleText(text: String?) -> NBLaunchImageView {
+    @discardableResult func addTitleText(text: String?) -> NBLaunchImageView {
         titleLabel.text = text
         return self
     }
     
-    func setContentText(text: String?) -> NBLaunchImageView {
+    @discardableResult func addContentText(text: String?) -> NBLaunchImageView {
         contentLabel.text = text
         return self
     }
     
-    func setBackgroundColor(color: UIColor?) -> NBLaunchImageView {
+    @discardableResult func addBackgroundColor(color: UIColor?) -> NBLaunchImageView {
         backgroundColor = color
         return self
     }
