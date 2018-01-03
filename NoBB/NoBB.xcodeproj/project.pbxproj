@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BE0BD7071FFBBED20069C688 /* NBMainPageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BD7061FFBBED20069C688 /* NBMainPageDataSource.swift */; };
+		BE5A41081FFC6FB8009B4A75 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5A41071FFC6FB8009B4A75 /* libz.tbd */; };
+		BE5A410A1FFC7A6D009B4A75 /* WCDBSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5A41091FFC7A6D009B4A75 /* WCDBSwift.framework */; };
 		BEC4F7A21FFB332C00103DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */; };
 		BEC4F7A41FFB332C00103DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4F7A31FFB332C00103DAE /* ViewController.swift */; };
 		BEC4F7A71FFB332C00103DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC4F7A51FFB332C00103DAE /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		BE0BD7061FFBBED20069C688 /* NBMainPageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainPageDataSource.swift; sourceTree = "<group>"; };
+		BE5A41071FFC6FB8009B4A75 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BE5A41091FFC7A6D009B4A75 /* WCDBSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WCDBSwift.framework; sourceTree = "<group>"; };
 		BEC4F79E1FFB332C00103DAE /* NoBB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoBB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC4F7A31FFB332C00103DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5A410A1FFC7A6D009B4A75 /* WCDBSwift.framework in Frameworks */,
+				BE5A41081FFC6FB8009B4A75 /* libz.tbd in Frameworks */,
 				BEE3D1D91FFBD874000F8B6D /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5A40F81FFC6F14009B4A75 /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				BE5A41091FFC7A6D009B4A75 /* WCDBSwift.framework */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
 		BEC4F7951FFB332C00103DAE = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,7 @@
 			children = (
 				BEE3D1DA1FFC6292000F8B6D /* UI */,
 				BEE3D1DB1FFC62A8000F8B6D /* DataSource */,
+				BE5A40F81FFC6F14009B4A75 /* ThirdLibrary */,
 				BEE3D1DE1FFC62E5000F8B6D /* Source */,
 				BEC4F7A11FFB332C00103DAE /* AppDelegate.swift */,
 				BEC4F7A31FFB332C00103DAE /* ViewController.swift */,
@@ -148,6 +163,7 @@
 		BEE3D1D71FFBD873000F8B6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE5A41071FFC6FB8009B4A75 /* libz.tbd */,
 				BEE3D1D81FFBD873000F8B6D /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
@@ -448,9 +464,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LESEXUKLEU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NoBB/ThirdLibrary",
+				);
 				INFOPLIST_FILE = NoBB/Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.efetion.wzh.NoBB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,9 +488,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LESEXUKLEU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NoBB/ThirdLibrary",
+				);
 				INFOPLIST_FILE = NoBB/Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.efetion.wzh.NoBB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
